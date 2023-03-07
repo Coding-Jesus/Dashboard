@@ -18,7 +18,7 @@ const Featured = () => {
                 <p className="title">Total sales made today</p>
                 <p className="amount">$420</p>
                 <p className="desc">
-                    Previous transactions processing. Last payments may not be included.
+                    Previous transactions processing. Latest payments may not be included.
                 </p>
                 <div className="summary">
                     <div className="item">
