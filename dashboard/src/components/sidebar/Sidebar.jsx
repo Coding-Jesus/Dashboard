@@ -11,30 +11,39 @@ import StorageIcon from '@mui/icons-material/Storage';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 
 const sidebar = () => {
     return (
         <div className='sidebar'>
             <div className="top">
-                <span className="logo">Admin</span>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                    <span className="logo">Admin</span>
+                </Link>
             </div>
             <hr />
             <div className="center">
                 <ul>
                     <p className="title">Main</p>
-                    <li>
-                        <DashboardIcon className="icon" />
-                        <span>Dashboard</span>
-                    </li>
+                    <Link to="/" style={{ textDecoration: "none" }}>
+                        <li>
+                            <DashboardIcon className="icon" />
+                            <span>Dashboard</span>
+                        </li>
+                    </Link>
                     <p className="title">Lists</p>
-                    <li>
-                        <PersonOutlineOutlinedIcon className="icon" />
-                        <span>Users</span>
-                    </li>
-                    <li>
-                        <StoreOutlinedIcon className="icon" />
-                        <span>Products</span>
-                    </li>
+                    <Link to="/users" style={{ textDecoration: "none" }}>
+                        <li>
+                            <PersonOutlineOutlinedIcon className="icon" />
+                            <span>Users</span>
+                        </li>
+                    </Link>
+                    <Link to="/products" style={{ textDecoration: "none" }}>
+                        <li>
+                            <StoreOutlinedIcon className="icon" />
+                            <span>Products</span>
+                        </li>
+                    </Link>
                     <li>
                         <CreditCardOutlinedIcon className="icon" />
                         <span>Orders</span>
