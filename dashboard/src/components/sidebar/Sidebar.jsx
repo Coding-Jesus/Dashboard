@@ -11,9 +11,14 @@ import StorageIcon from '@mui/icons-material/Storage';
 import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import Brightness4OutlinedIcon from '@mui/icons-material/Brightness4Outlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../../context/darkModeContext';
+import { useContext } from 'react';
 
-const sidebar = () => {
+const Sidebar = () => {
+    const { darkMode, dispatch } = useContext(DarkModeContext);
     return (
         <div className='sidebar'>
             <div className="top">
@@ -70,11 +75,11 @@ const sidebar = () => {
                         <StorageIcon className="icon" />
                         <span>Logs</span>
                     </li>
-                    <p className="title">User</p>
                     <li>
                         <SettingsIcon className="icon" />
                         <span>Settings</span>
                     </li>
+                    <p className="title">User</p>
                     <li>
                         <AccountBoxIcon className="icon" />
                         <span>Profile</span>
@@ -86,11 +91,14 @@ const sidebar = () => {
                 </ul>
             </div>
             <div className="bottom">
-                <div className="colorOption"></div>
-                <div className="colorOption"></div>
+                {darkMode ? (
+                    <LightModeOutlinedIcon className='icon' onClick={() => dispatch({ type: "TOGGLE" })} />
+                ) : (
+                    <Brightness4OutlinedIcon className='icon' onClick={() => dispatch({ type: "TOGGLE" })} />
+                )}
             </div>
         </div>
     );
 };
 
-export default sidebar;
+export default Sidebar;

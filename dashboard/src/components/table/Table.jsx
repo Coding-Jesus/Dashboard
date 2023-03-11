@@ -12,7 +12,7 @@ const List = () => {
         {
             id: 1143155,
             product: "Acer Nitro 5",
-            img: "/images/hat.png",
+            img: "https://m.media-amazon.com/images/I/81lDOtJRTkL._AC_SL1500_.jpg",
             customer: "John Smith",
             date: "1 March",
             amount: 785,
@@ -22,7 +22,7 @@ const List = () => {
         {
             id: 2235235,
             product: "Playstation 5",
-            img: "/images/hat.png",
+            img: "https://m.media-amazon.com/images/I/31JaiPXYI8L._AC_UY327_FMwebp_QL65_.jpg",
             customer: "Michael Doe",
             date: "1 March",
             amount: 900,
@@ -32,7 +32,7 @@ const List = () => {
         {
             id: 2342353,
             product: "Redragon S101",
-            img: "/images/hat.png",
+            img: "https://m.media-amazon.com/images/I/71kr3WAj1FL._AC_UY327_FMwebp_QL65_.jpg",
             customer: "John Smith",
             date: "1 March",
             amount: 35,
@@ -42,7 +42,7 @@ const List = () => {
         {
             id: 2357741,
             product: "Razer Blade 15",
-            img: "/images/hat.png",
+            img: "https://m.media-amazon.com/images/I/71wF7YDIQkL._AC_UY327_FMwebp_QL65_.jpg",
             customer: "Jane Smith",
             date: "1 March",
             amount: 920,
@@ -52,7 +52,7 @@ const List = () => {
         {
             id: 2342355,
             product: "ASUS ROG Strix",
-            img: "/images/hat.png",
+            img: "https://m.media-amazon.com/images/I/81hH5vK-MCL._AC_UY327_FMwebp_QL65_.jpg",
             customer: "Harold Carol",
             date: "1 March",
             amount: 2000,
